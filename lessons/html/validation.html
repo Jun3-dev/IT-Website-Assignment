@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>XTML 1.0 Strict Validation</title>
+      <link rel="stylesheet" href="../css/validation.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="container">
+         <h1>The Importance of XHTML 1.0 Strict Validation</h1>
+         <hr />
+         <h2>What is XTML 1.0 Validation?</h2>
+         <p>XHTML 1.0 Validation is a quality confirmation program used to look at Hypertext Markup Language
+            (HTML) markup components for syntax errors. A validator can be a valuable device for a HTML client
+            who gets information electronically from an assortment of information sources.
+         </p>
+         <hr />
+         <h2>How it works</h2>
+         <p>Head to this link <a href="https://validator.w3.org/#validate_by_uri">validator</a>
+            or search up HTML validator up in your web browser and click on the first link. The page
+            should look something like this 
+            <br />
+            <br />
+            <img src="../../images/validationhome.png" alt="validator home page" 
+               width="700" />
+            <br />
+            <br />
+            Next click on the third tab that says, "Validate by Direct Input".  The page should look something like
+            this:
+            <br />
+            <br />
+            <img src="../../images/directinput.png" alt="direct input page" 
+               width = "700"/>
+            <br />
+            <br />
+            This essentially
+            means that you just copy paste your entire code into the box on the new screen. This will be
+            easier incase the platform that you run it on has some internal errors and displays
+            bugs that have nothing to do with your code (i.e edstem). After copy pasting your code, click the
+            check button and wait for the results to render. Either the screen will turn up red and
+            state where the issue is (what line of code and which column the problem is) or the screen will turn green.
+            Let's look at some example of errors. 
+         </p>
+         <hr/>
+         <h2>Validation Errors</h2>
+         <p>Some errors the validator will pick up can be forgetting a closing tag, invalid syntax for a comment,
+            not allowing an element in a specific place, for example the style tag in the body. It should instead be
+            used in the head and so on. You can look at the full list at this website, <a href="https://validator.w3.org/docs/errors.html">
+            Validator Errors Explained</a>
+         </p>
+         <hr />
+         <h2>Debugging errors</h2>
+         <p>Suppose this is our code:
+            <br />
+            <br />
+            <img src="../../images/badcode.png" alt="code with errors" width="700" height="400" />
+            <br />
+            <br />
+            Automatically, we can see errors, but let's insert the code into the validator. The validator comes up with these errors:
+            <br />
+            <br />
+            <img src="../../images/Errors.png" alt="errors page" width="700"/>
+            <br />
+            <br />
+            Now we can see that the validator is telling us that we are missing our lang which 
+            defines what language we are in (english in this case), we are missing closing tags, we have put
+            the style element in the body when it is meant to be in the head, we are missing quotation
+            marks and an alt attribute. Let's fix these errors up in our code and then see what happens.
+            <br />
+            <br />
+            <img src="../../images/corrected.png" alt="corrected code" width="700"/>
+            <br />
+            <br />
+            Now let's see what happens when the corrected code is put into the validator. It should
+            be all green.
+            <br />
+            <br />
+            <img src="../../images/validator-final.png" alt="green validator" width="700" />
+         </p>
+         <hr />
+         <a href="introtocss.html" class="button5">Next Lesson</a>
+      </div>
+   </body>
+</html>

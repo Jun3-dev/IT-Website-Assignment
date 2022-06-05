@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Tables</title>
+      <link rel="stylesheet" href="../css/tables.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="container">
+         <h1>Tables</h1>
+         <hr />
+         <p>Tables allow web developers to organise data neatly into rows
+            and columns.
+         </p>
+         <hr />
+         <h3>Example</h3>
+         <div class="table">
+            <table class="tbl">
+               <tr>
+                  <th>Day</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+               </tr>
+               <tr>
+                  <td>Monday</td>
+                  <td>16/05/2022</td>
+                  <td>3:20pm</td>
+                  <td>School</td>
+               </tr>
+               <tr>
+                  <td>Tuesday</td>
+                  <td>17/05/2022</td>
+                  <td>5:30pm</td>
+                  <td>Home</td>
+               </tr>
+               <tr>
+                  <td>Wednesday</td>
+                  <td>18/05/2022</td>
+                  <td>7:20am</td>
+                  <td>Friend's House</td>
+               </tr>
+            </table>
+         </div>
+         <br />
+         <hr />
+         <h3>Define a HTML Table</h3>
+         <p>
+            A table in HTML consists of table cells inside rows and columns
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;!DOCTYPE&gt; 
+            <br />
+            &lt;html&gt;
+            <br />
+            &nbsp;&nbsp;&lt;head&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;Page Title&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/head&gt;
+            <br />
+            &nbsp;&nbsp;&lt;body&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;table&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Day&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Date&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Time&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Location&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Monday&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;16/05/2022&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3:20pm&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;School&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Tuesday&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;17/05/2022&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;5:30pm&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Home&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Wednesday&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;18/05/2022&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;7:20am&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Friend's House&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/body&gt;
+            <br />
+            &lt;/html&gt;
+            <br />
+            </code>
+         </div>
+         <br />
+         <hr />
+         <h3>Table Cells</h3>
+         <p>Each table cell is defined by the &lt;td&gt; and &lt;/td&gt; tag.
+            The &lt;td&gt; tag stands for 'table data'.
+            <br />
+            <br />
+            Everything between the &lt;td&gt; and &lt;/td&gt; is the content of the table cell.
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;table&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jun&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sanjana&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &lt;/table&gt;  
+            </code>
+         </div>
+         <br />
+         <p>
+            <em>Note: table data elements are the data containers of the table.
+            They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</em>
+         </p>
+         <hr />
+         <h3>Table Rows</h3>
+         <p>Each table row starts with the &lt;tr&gt; and ends with the &lt;/tr&gt; tag. The &lt;tr&gt; tag
+            stands for 'table row'. 
+         </p>
+         <h3>Examples</h3>
+         <div class="codebox">
+            <code>
+            &lt;table&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jun&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sanjana&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.73m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.47m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.64m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &lt;table&gt;
+            </code>
+         </div>
+         <br />
+         <p>
+            You can have as many rows as you like in a table, just make sure that the number of cells are the same in each row.
+         </p>
+         <hr />
+         <h3>Table Header</h3>
+         <p>Sometimes you want your table cells to have a header, in those cases, we use a &lt;th&gt; tag instead of a &lt;td&gt;.</p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;table&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Person 1&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Person 2&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Person 3&lt;/th&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jun&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mark&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sanjana&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &nbsp;&nbsp;&lt;tr&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.73m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.47m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1.64m&lt;/td&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/tr&gt;
+            <br />
+            &lt;table&gt;  
+            </code>
+         </div>
+         <br />
+         <p>By default, the text in &lt;th&gt; elements are bold and centered, but you can change that with CSS.</p>
+         <hr />
+         <h3>Exercise</h3>
+         <iframe src ="https://www.youtube.com/embed/RD2HXGK1NE4" width="700" height="500">
+         </iframe>
+         <a href="validation.html" class="button5">Next Lesson</a>
+         <h3 class="references">References</h3>
+         <ul class="referenceslist">
+            <li><a href="https://www.w3schools.com/html/html_tables.asp">W3Schools</a></li>
+         </ul>
+      </div>
+   </body>
+</html>

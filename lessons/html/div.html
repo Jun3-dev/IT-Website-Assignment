@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Divs and Spans</title>
+      <link rel="stylesheet" href="../css/div.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>HTML Divs and Spans</h1>
+      <hr />
+      <p class = "marg">TheThe &lt;div&gt; tag defines a division or a section in an HTML document.</p>
+      <p> The &lt;div&gt; tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.</p>
+      <p> The &lt;div&gt; tag is easily styled by using the class or id attribute.</p>
+      <p>  Any sort of content can be put inside the &lt;div&gt; tag! </p>
+      <div class = "codebox">
+         <code>
+         &lt;!DOCTYPE html&gt;
+         <br/>
+         &lt;html&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;head&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.myDiv{
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;/head&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 id="myDiv"&gt;My Header&lt;/h1&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/body&gt;
+         <br />
+         &lt;/html&gt;
+         <br />
+         </code>
+      </div>
+      <hr />
+      <h2>Spans</h2>
+      <p>
+         The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document.
+         <br/>
+         <br/>
+         The &lt;span&gt; tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+         <br/>
+         <br/>
+         The &lt;span&gt; tag is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an inline element.
+      </p>
+      <div class = "codebox1">
+         <code>
+         &lt;p&gt;This word is &lt;span style="color:blue"&gt;blue&lt;/span&gt; eyes.&lt;/p&gt;
+         </code>
+      </div>
+      <hr />
+      <a href="selectors.html" class="button5">Next Lesson</a>
+   </body>
+</html>

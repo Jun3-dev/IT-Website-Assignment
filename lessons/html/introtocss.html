@@ -1,0 +1,213 @@
+<!-- Most of the information comes from W3Schools at https://www.w3schools.com/css/css_intro.asp" -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Introduction to CSS</title>
+      <link rel="stylesheet" href="../css/introtocss.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel = "stylesheet" href = "../css/introtocss.css">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>Introduction to CSS</h1>
+      <hr />
+      <p class="special">CSS Is the language which we use to syle a webpage</p>
+      <hr />
+      <h2>What is CSS?</h2>
+      <ul>
+         <li>CSS stands for Cascading Style Sheets</li>
+         <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+         <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+         <li>External stylesheets are stored in CSS files</li>
+      </ul>
+      <hr />
+      <h2>Why use CSS</h2>
+      <p>CSS is used to define styles for your web pages, including the design, layout and variations 
+         in display for different devices and screen sizes.
+      </p>
+      <h2>Example</h2>
+      <div class="codebox">
+         <code>
+         body {
+         <br />
+         &nbsp;&nbsp;background-color: lightblue;
+         <br />
+         }
+         <br />
+         h1 {
+         <br />
+         &nbsp;&nbsp;color: white;
+         <br />
+         &nbsp;&nbsp;text-align: center;
+         <br />
+         }
+         <br />
+         p {
+         <br />
+         &nbsp;&nbsp;font-family: verdana;
+         <br />
+         &nbsp;&nbsp;font-size: 20px;
+         <br />
+         }
+         </code>
+      </div>
+      <br />
+      <hr />
+      <h2>CSS Solved a Big Problem</h2>
+      <p>HTML was never intended to contain tags for formatting a web page.
+         HTMl was created to describe the content of a web page and provide
+         information on it. For example:
+         <br />
+         <br />
+         &lt;h1&gt;This is a heading &lt;/h1&gt;
+         <br/>
+         &lt;h2&gt;This is a paragraph &lt;/p&gt;
+         <br />
+         <br />
+         When tags like &lt;font&gt; and colour attributes were added to HTML
+         it started causing frustration amongst web developers. To solve the problem,
+         the World Wide Web Consortium (W3C) created CSS. CSS removed the style formatting
+         from the HTMl page. 
+      </p>
+      <hr />
+      <h2>CSS Saves a Lot of Work</h2>
+      <p>The style definitions are normally saved in external .css files.
+         With an external stylesheet file, you can change the look of an entire website by changing just one file.
+      </p>
+      <hr />
+      <h2>How to include CSS in a Page</h2>
+      <p>To include CSS in a page, make a new file the same way you make HTML files and name it
+         "style.css". Next, you need to link the css to the HTMl page otherwise it will not
+         work. To do this you have to include the &lt;link rel&gt; tag.  
+      </p>
+      <h2>Example</h2>
+      <div class="codebox">
+         <code>
+         &lt;!DOCTYPE html&gt;
+         <br />
+         &lt;html lang="en"&gt;
+         <br />
+         &nbsp;&nbsp;&lt;head&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;New Webpage &lt;/head&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" &nbsp;&nbsp;&nbsp;&nbsp;href="style.css"&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/head&gt;
+         <br />
+         &lt;/html&gt;
+         </code>
+      </div>
+      <p>Make sure when you link your stylesheet to yout HTML that you type the exact
+         name of the CSS file, otherwise it will not load.
+      </p>
+      <hr />
+      <h2>Common CSS styles</h2>
+      <table class="tags">
+         <tr>
+            <th>Style Tags</th>
+            <th>Purpose of the tag</th>
+         </tr>
+         <tr>
+            <td>color</td>
+            <td>The colour CSS property specifies the foreground colour of an 
+               element's text and text decorations, as well as the currentcolor value.
+            </td>
+         </tr>
+         <tr>
+            <td>text-align</td>
+            <td>Changes the positioning of the text on the page, there are multiple options such as
+               center, jutified, left, right, etc. 
+            </td>
+         </tr>
+         <tr>
+            <td>background</td>
+            <td>Changes the background colour, you can use hex code, rgb and other
+               ways to change the colour. We recommend hex code. 
+            </td>
+         </tr>
+         <tr>
+            <td>text-size</td>
+            <td>Changes the size of the text anywhere, you can apply it to 
+               certain pieces of texts such as paragraphs and headings.
+            </td>
+         </tr>
+         <tr>
+            <td>font-family</td>
+            <td>Changes the font in the web-page.</td>
+         </tr>
+         <tr>
+            <td>padding</td>
+            <td>Defines the innermost portion of the box model, 
+               creating space around an element's content, inside 
+               of any defined margins and/or borders.
+            </td>
+         </tr>
+         <tr>
+            <td>border</td>
+            <td>Area around the padding that extends from the outer edge of 
+               the padding box to the inner edge of the margin
+            </td>
+         </tr>
+         <tr>
+            <td>margin</td>
+            <td>The margin is the transparent outermost area that surrounds the border.</td>
+         </tr>
+         <tr>
+            <td>max-width</td>
+            <td>Setting the max-width of a block-level element will prevent it from stretching 
+               out to the edges of its container. 
+            </td>
+         </tr>
+         <tr>
+            <td>float</td>
+            <td>The CSS float property specifies how an element 
+               should float. The float property is used for positioning 
+               and formatting content e.g. let an image float left to the
+               text in a container.
+            </td>
+         </tr>
+      </table>
+      <hr />
+      <iframe src = "https://www.youtube.com/embed/7XWe83BDrmI" width="700" height="500">
+      </iframe>
+      <a href="classes.html" class="button5">Next Lesson</a>
+      <h2>References</h2>
+      <ul>
+         <li><a href="https://www.w3schools.com/css/css_intro.asp">w3schools</a></li>
+      </ul>
+   </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Headings and Paragraphs</title>
+      <link rel="stylesheet" href="../css/headandpara.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="container">
+         <h1>Headings and Paragraphs</h1>
+         <hr />
+         <p>HTML headings and subtitles are headings that you want to display on your 
+            webpage, similar to titles on documents and articles.
+         </p>
+         <hr />
+         <h2>Example</h2>
+         <img src="../../images/heading.png" alt="headings" width="700" />
+         <hr />
+         <h2>HTML Headings</h2>
+         <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+            &lt;h1&gt; defines the most important heading (the biggest) and 
+            &lt;h6&gt; defines the least important heading. Browsers automatically 
+            add whitespace around headings. Most readers skim over large bodies
+            of texts so headers help to structure your texts and provide insight
+            into what different sections are about.
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;h1&gt;Heading 1&lt;/h1&gt;
+            <br />
+            &lt;h2&gt;Heading 2&lt;/h2&gt;
+            <br />
+            &lt;h3&gt;Heading 3&lt;/h3&gt;
+            <br />
+            &lt;h4&gt;Heading 4&lt;/h4&gt;
+            <br />
+            &lt;h5&gt;Heading 5&lt;/h5&gt;
+            <br />
+            &lt;h6&gt;Heading 6&lt;/h6&gt;
+            <br />
+            </code>
+         </div>
+         <hr />
+         <h2>Bigger Headings</h2>
+         <p>Each HTML heading has a default size. However, you can specify the size for 
+            any heading with the style attribute, using the CSS font-size property:
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;h1 style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;
+            <br />
+            </code>
+         </div>
+         <hr />
+         <h2>HTML Paragraphs</h2>
+         <p>
+            A paragraph always starts on a new line, and is usually a block of text
+            and is defined by the &lt;p&gt; tag. A paragraph always starts on a new 
+            line, and browsers automatically add some white space before and after 
+            a paragraph.
+         </p>
+         <h2>Example</h2>
+         <div class="codebox">
+            <code>
+            &lt;p&gt;This is a paragraph&lt;/p&gt;
+            <br />
+            </code>
+         </div>
+         <hr />
+         <h2>HTML Display</h2>
+         <p>You cannot be sure how HTML will be displayed. 
+            Large or small screens, and resized windows will create different results.
+            With HTML, you cannot change the display by adding extra spaces or 
+            extra lines in your HTML code. The browser will automatically remove 
+            any extra spaces and lines when the page is displayed:
+         </p>
+         <hr />
+         <h2>HTML Horizontal Lines</h2>
+         <p>The &lt;hr /&gt; tag defines a thematic break in the HTML page and
+            is most often displayed as a horizontal line. They are generally used 
+            to define a new segment in a page and separate content. 
+         </p>
+         <h2>Example</h2>
+         <div class="codebox">
+            <code>
+            &lt;h1&gt;This is a Heading&lt;/h1&gt;
+            <br />
+            &lt;p&gt;This is a paragraph&lt;/p&gt;
+            <br />
+            &lt;hr /&gt;
+            </code>
+         </div>
+         <p><em>Note that the &lt;hr&gt; tag is a self closing tag (no ending tag).</em></p>
+         <hr />
+         <h2>HTML Line Breaks</h2>
+         <p>The HTML &lt;br /&gt; element defines a line break. Use &lt;br /&gt;
+            to start a new paragraph without making a separate &lt;p&gt; tag.
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;p&gt;This is a &lt;br /&gt; paragraph with &lt;br /&gt; multiple breaks &lt;/h1&gt;
+            </code>
+         </div>
+         <hr />
+         <h2>Exercise</h2>
+         <iframe src = "https://www.youtube.com/embed/EzTf7UHQ4H4" width="700" height="500">
+         </iframe>
+         <hr />
+         <a href="text_formatting.html" class="button5">Next Lesson</a>
+      </div>
+   </body>
+</html>

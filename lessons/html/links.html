@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hyperlinks</title>
+      <link rel="stylesheet" href="../css/links.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class="container">
+         <h1>HTML Links and Multi-page Websites</h1>
+         <hr />
+         <p>
+            Links are found in nearly all web pages. Links allow users to click their way from page to page.
+         </p>
+         <hr />
+         <h3>HTML Links - Hyperlinks</h3>
+         <ul>
+            <li>HTML Links are hyperlinks</li>
+            <li>You can click on a link to be directed to a new document or webpage</li>
+            <li>When you move the mouse over a link, the mouse arrow will turn into a little hand.</li>
+         </ul>
+         <p>
+            <em>Note: Links don't have to only be text. They can be disguised as images and 
+            any other HTML element!
+            </em>
+         </p>
+         <hr />
+         <h3>HTMl Links - Syntax</h3>
+         <p>
+            The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;a href="url"&gt;link text&lt;/a&gt;
+            </code>
+         </div>
+         <br />
+         <p>
+            The most important attribute of the &lt;a&gt; element is the href attribute
+            which defines the link's destination. The <em>link text</em> is the part
+            that is visible to the reader. Clicking on the linked text will direct the reader
+            to the specified URL address.
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;a href="www.facezongoogappflix.com/"&gt;Visit facezongoogappflix&lt;/a&gt;
+            </code>
+         </div>
+         <br />
+         <p>
+            By browser and HTML default, links are appeared as following in browsers: 
+         </p>
+         <ul>
+            <li>An unvisited link is underlined and blue</li>
+            <li>A visited link is underlined and purple</li>
+            <li>An active link is underlined and red</li>
+         </ul>
+         <p>
+            You can style links to appear and look differently using CSS.
+         </p>
+         <hr />
+         <h2>Multi-page Websites</h2>
+         <p>
+            To make a multipage website, simply make a new file in the same project
+            and name it differently to the page you have made already. In this example,
+            I am going to use index.html and make my second page australia.html. This is how
+            you make a multi-page website. Now we are going to make a link that so when you click on it,
+            it goes to your second page. 
+         </p>
+         <h3>Syntax</h3>
+         <div class="codebox">
+            <code>
+            &lt;a href="page1.html"&gt;Next page&lt;/a&gt;
+            </code>
+         </div>
+         <p>
+            See how I put the page name of the page I wanted to go to, this is what
+            you have to do to make sure that it goes to the next page, otherwise it will
+            come up with File not Found
+         </p>
+         <hr />
+         <h2>Exercise</h2>
+         <!-- Insert Exercise -->
+         <iframe src = "https://www.youtube.com/embed/wc_5SCCV8hg" width="700" height="500">
+         </iframe>
+         <hr />
+         <a href="organisation.html" class="button5">Next Lesson</a>
+      </div>
+   </body>
+</html>

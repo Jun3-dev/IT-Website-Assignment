@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Effectively Organise Files</title>
+      <link rel="stylesheet" href="../css/organisation.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>How should you structure your website?</h1>
+      <hr />
+      <ol>
+         <li><code> index.html</code> This file will generally contain your homepage content, that is, the text and images that people see when they first go to your site. </li>
+      </ol>
+      <img src = "../../images/index.png" alt="index.html" class="special" />
+      <ol>
+         <li>Images Folder: This folder will contain all the images that you use on your site.</li>
+      </ol>
+      <img src = "../../images/images.png" alt="images.png" class="special" />
+      <ol>
+         <li>Styles Folder: This folder will contain the CSS to style your content</li>
+      </ol>
+      <img src = "../../images/css.png" alt="css.png" class="special" />
+      <hr />
+      <h2>Paths</h2>
+      <p>To make files talk to one another, you have to provide a file path between them</p>
+      <ul>
+         <li>First, drag and drop the images you want to display on your webpage into the images folder</li>
+         <li>Open up your index.html file, and insert the following code: &lt;img src="" alt="my image"&gt; </li>
+         <li>Between the quotation marks of src = "" put the path of your file e.g images/myimage.jpeg, currently our image is in the "image" directory</li>
+         <li>If your file is outside of the current folder, you can put "../" at the start of the PATH to signal the computer to exit the current folder.</li>
+         <li>Save your html and then click the "Go Live" button on your Visual Studio Code IDE.</li>
+      </ul>
+      <img class = "golive" src = "../../images/clickbaitthumbnail.jpg" alt="clickbait" />
+      <ul>
+         <li>You should now see your image that you wanted to display on the website</li>
+      </ul>
+      <img class = "golive" src = "../../images/liquid.png" alt = "horse"/>
+      <ul>
+         <li>If this code does NOT work try putting ../ before the image path e.g</li>
+      </ul>
+      <img src = "../../images/dotdotslash.png" alt="dotdotslash" width="590" />
+      <hr />
+      <a href="images.html" class="button5">Next Lesson</a>   
+   </body>
+</html>

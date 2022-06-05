@@ -1,0 +1,373 @@
+<!-- information from w3 schools at https://www.w3schools.com/css/css_selectors.asp and more information from http://year8.cgscomputing.com/2019/s1activities/activity3/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>CSS Selectors</title>
+      <link rel="stylesheet" href="../css/selectors.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>CSS Selectors</h1>
+      <hr />
+      <p class="special">A CSS selector selects the HTML element(s) you want to style.</p>
+      <hr />
+      <h2>CSS Selectors</h2>
+      <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. We can
+         divide CSS selectors into 8 categoies.
+      </p>
+      <ul>
+         <li>Universal selector: the universal selector used to select any element regardless of their position.</li>
+         <li>Type selector: the type selectors will select any HTML element on a page that matches 
+            the selector, regardless of their position in the document tree.
+         </li>
+         <li>Class selector: The class selector selects elements with a specific class attribute.</li>
+         <li>Descendant selector: the descendant selectors are used to select elements that are descendants of another element in the document tree.</li>
+         <li>First-child selector: the first-child selector is used to select the specified selector, only if it is the first child of its parent.</li>
+         <li>Hover selector: the hover selector is used to select elements when you mouse over them.</li>
+         <li>ID selector: the id selector styles the element with the specified id.</li>
+         <li>Adjacent selector: the adjacent sibling selectors will select the sibling immediately following an element.</li>
+      </ul>
+      <p>We will explain the basics of CSS selectors</p>
+      <hr />
+      <h2>Universal selectors</h2>
+      <p>Universal selectors are used to select any element. The rule below, for example, will make all HTML elements on a page blue, regardless of 
+         where they are in the document tree.
+      </p>
+      <div class="codebox">
+         <code>
+         * {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br />
+         }
+         </code>
+      </div>
+      <br />
+      <!-- image from http://css.maxdesign.com.au/selectutorial/selectors_universal.htm -->
+      <img src="../../images/universal.png" alt="universal" height="200" />
+      <hr />
+      <h2>Type selector</h2>
+      <p>The most common and easy to understand selectors are type selectors. Type selectors will select any HTML element on 
+         a page that matches the selector, regardless of their position in the document tree. For example:
+      </p>
+      <div class="codebox">
+         <code>
+         em {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br /> 
+         }  
+         </code>
+      </div>
+      <p>This rule will select any em element on the page and color it blue. As you can see from the document tree diagram below, all em elements will be colored blue, regardless of their position in the document tree.</p>
+      <img src="../../images/type.png" alt="type selector" height="200" />
+      <hr />
+      <h2>Class selector</h2>
+      <p>While type selectors target every instance of an element, class selectors can be used to select any HTML element that has a class attribute, regardless of their position in the document tree.
+         <br />
+         <br />
+         For example, if you want to target the first paragraph and first list items on a page to make them stand out, you could mark up the page in the following way:
+      </p>
+      <div class="codebox">
+         <code>
+         &lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&lt;p class="big"&gt;This is some&nbsp;&lt;em&gt;text&lt;/em&gt;&lt;/p&gt;
+         <br />
+         &nbsp;&nbsp;&lt;p&gt;this is some text&lt;/p&gt;
+         <br />
+         &nbsp;&nbsp;&lt;ul&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="big"&gt;List item&lt;/li&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;List item&lt;/li&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/ul&gt;
+         <br />
+         &lt;/body&gt;
+         </code>
+      </div>
+      <br />
+      <img src="../../images/class.png" alt="class" height="200" width="340" />
+      <hr />
+      <h2>Descendant selector</h2>
+      <div class="codebox">
+         <code>
+         &lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&lt;h1&gt;Heading&lt;em&gt;here&lt;/em&gt;&lt;/h1&gt;
+         <br />
+         &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor&lt;em&gt;sit&lt;/em&gt;amet.&lt;/p&gt;
+         <br />
+         &lt;/body&gt;
+         </code>
+      </div>
+      <p>The tree diagram (with the &lt;em&gt; tag targeted) would be:</p>
+      <img src="../../images/descendant1.png" alt="descendant" height="200" />
+      <p>If you use a type selector like the example below, you will select all &lt;em&gt; elements on the page:</p>
+      <div class="codebox">
+         <code>
+         em {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br />
+         }
+         </code>
+      </div>
+      <p>However, if you use a descendant selector, you can refine the &lt;em&gt; elements that you select. The rule below 
+         will only select &lt;em&gt; elements that are descendants of &lt;p&gt; elements. If this rule is applied, the &lt;em&gt; 
+         element within the &lt;h1&gt; will not be colored blue.
+      </p>
+      <div class="codebox">
+         <code>
+         p em {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br />
+         }
+         </code>
+      </div>
+      <p>You can also jump levels in the document tree structure to select descendants. For example, the following code:</p>
+      <div class="codebox">
+         <code>
+         &lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor&lt;em&gt;sit&lt;/em&gt; amet.&lt;/p&gt;
+         <br />
+         &nbsp;&nbsp;&lt;ul&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;em&gt;Item 3&lt;/em&gt;&lt;/li&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/ul&gt;
+         <br />
+         &lt;/body&gt;
+         </code>
+      </div>
+      <p>The document tree (with a third-level &lt;em&gt; element highlighted) would be:</p>
+      <img src="../../images/descendant2.png" alt="descendant2" height="200" />
+      <p>Using the following rule you can isolate any &lt;em&gt; element inside a &lt;ul&gt; element, without having 
+         to describe the &lt;li&gt; element. If this rule is applied, any &lt;em&gt; element within a &lt;ul&gt; element 
+         will be colored blue. However, the &lt;em&gt; element within the &lt;p&gt; will not be colored blue:
+      </p>
+      <div class="codebox">
+         <code>
+         ul em {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br />
+         }
+         </code>
+      </div>
+      <hr />
+      <h2>First-child selector</h2>
+      <p>The first-child selector is used to select the specified selector, 
+         only if it is the first child of its parent.
+      </p>
+      <div class="codebox">
+         <code>
+         p:first-child {
+         <br />
+         &nbsp;&nbsp;background-color: yellow;
+         <br />
+         }
+         </code>
+      </div>
+      <hr />
+      <h2>Hover selector</h2>
+      <p>The :hover selector is used to select elements when you mouse over them.
+         Tip: The :hover selector can be used on all elements, not only on links.
+         Tip: Use the :link selector to style links to unvisited pages, the :visited 
+         selector to style links to visited pages, and the :active selector to style the active link.
+         Note: :hover MUST come after :link and :visited (if they are present) in the 
+         CSS definition, in order to be effective.
+      </p>
+      <div class="codebox">
+         <code>
+         a:hover {
+         <br />
+         &nbsp;&nbsp;background-color:yellow;
+         <br />
+         }
+         </code>
+      </div>
+      <hr />
+      <h2>ID selector</h2>
+      <p>The #id selector styles the element with the specified id.</p>
+      <div class="codebox">
+         <code>
+         #idname {
+         <br />
+         &nbsp;&nbsp;background-color:yellow;
+         <br />
+         }
+         </code>
+      </div>
+      <hr />
+      <h2>Adjacent sibling selectors</h2>
+      <p>Adjacent sibling selectors will select the sibling immediately following an element. 
+         For example, you may wish to target an &lt;h3&gt; element, but only &lt;h3&gt; elements 
+         that immediately follow an &lt;h2&gt; element. This is a commonly used example, as it 
+         has a real-world application. There is often too much space between &lt;h2&gt; and &lt;h3&gt; 
+         elements when they appear immediately after each other. The code would be:
+      </p>
+      <div class="codebox">
+         <code>
+         &lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&lt;h2&gt;Heading 2&lt;/h2&gt;&lt;em&gt;text&lt;/em&gt;&lt;/h2&gt;
+         <br />
+         &nbsp;&nbsp;&lt;h3&gt;Heading 3 text&lt;/h3&gt;
+         <br />
+         &nbsp;&nbsp;&lt;p&gt;This is &lt;em&gt;text&lt;/em&gt; and more &nbsp;&nbsp;&lt;strong&gt;text&lt;/strong&gt;&lt;/p&gt;
+         <br />
+         &lt;/body&gt;
+         </code>
+      </div>
+      <p>The document tree would be:</p>
+      <img src="../../images/adjacent.png" alt="adjacent" height="200" width="340" />
+      <p>Using the following rule, you can target any &lt;h3&gt; that follows an &lt;h2&gt;:</p>
+      <div class="codebox">
+         <code>
+         h2 + h3 {
+         <br />
+         &nbsp;&nbsp;margin: -1em;
+         <br />
+         }
+         </code>
+      </div>
+      <p>Adjacent sibling selectors also work for inline elements such as &lt;em&gt; and &lt;strong&gt;.</p>
+      <img src="../../images/adjacent2.png" alt="adjacent2" height="200" width="340" />
+      <p>Using the following rule, you can target &lt;strong&gt; text that follows &lt;strong&gt; text:</p>
+      <div class="codebox">
+         <code>
+         em + strong {
+         <br />
+         &nbsp;&nbsp;color:blue;
+         <br />
+         }
+         </code>
+      </div>
+      <hr />
+      <h2>Exercise</h2>
+      <p>Use the <em>universal selector</em> to set:</p>
+      <ul>
+         <li>font of all elements within the page to sans-serif</li>
+         <li>size of all text on the page to 14px</li>
+         <li>line height of all text to 1.7em</li>
+      </ul>
+      <p>Use the <em>types selector</em> to set:</p>
+      <ul>
+         <li>the background colour of the page to gray</li>
+         <li>all text contained within &lt;em&gt; tags to the colour red</li>
+         <li>all text contained within &lt;strong&gt; tags to underlined</li>
+      </ul>
+      <p>Use <em>class selector</em> to set:</p>
+      <ul>
+         <li>the first paragraph with a class yellowText to have all its text displayed in yellow colour</li>
+         <li>an unordered list with the class whiteList to have all its text displayed in white colour</li>
+         <li>a new copyright/footer paragraph (which you need to write - it’s not included in the screen shot 
+            below, so you need to use your imagination!) with the class greenText to have all its text displayed 
+            in green, except text which has specific colour applied for particular elements (such as &lt;em&gt; and &lt;strong&gt; tags)
+         </li>
+      </ul>
+      <p>Use a<em>descendant selector</em> to set:</p>
+      <ul>
+         <li>when an &lt;em&gt; tag is contained within an &lt;li&gt; tag that the text colour should be changed to blue</li>
+      </ul>
+      <p>Use the<em>:first-class</em> pseudo-classes to set:</p>
+      <ul>
+         <li>The first &lt;li&gt; element of the unordered list to be underlined</li>
+      </ul>
+      <p>Use a <em>dynamic</em> to set:</p>
+      <ul>
+         <li>when a &lt;strong&gt; tag is hovered over the colour of the text changes to pink</li>
+      </ul>
+      <p>Use the <em>ID selector</em> pseudo-classes to set:</p>
+      <ul>
+         <li>an unordered list with the id greenList to have all its text displayed in green colour</li>
+      </ul>
+      <p>Use an <em>adjacent selector</em> to set:</p>
+      <ul>
+         <li>the paragraph (using a &lt;p&gt; tag) that immediately follows an unordered list to have all its text displayed in orange colour</li>
+      </ul>
+      <p>An example of how your page should look at the end is shown below:</p>
+      <img src="../../images/exerciseselect.png" alt="exercise picture" width="700" />
+      <p>Here is the unformatted text that you can copy into your webpage</p>
+      <div class="codebox">
+         <code>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin laoreet lectus vel lacinia. Quisque ultrices fermentum enim, nec dictum risus ultrices a. Nulla facilisi. Aenean in mauris justo. Aenean vitae ipsum urna, quis suscipit lorem. Aliquam et tristique risus. Curabitur id eros ante. Morbi pulvinar gravida mi, et fermentum nisl tristique eleifend. Phasellus porta tellus ac orci dapibus a commodo sem mollis. Mauris malesuada aliquam augue, pretium tempor turpis congue semper.
+         <br />
+         <br />
+         Donec faucibus pretium ultrices. Nullam eu justo erat. Proin ornare, felis non iaculis ullamcorper, urna leo sagittis dui, id lacinia risus lectus a nulla. Morbi non ligula augue. Vivamus at scelerisque tortor. Nam tristique nisi nec quam accumsan et pellentesque diam dignissim. Nullam aliquam porta orci, sollicitudin pharetra arcu adipiscing nec. Phasellus venenatis tincidunt urna, in iaculis dolor pulvinar eu. Integer accumsan dolor nec mi porttitor tincidunt dapibus libero varius. Cras eu ligula dui, eget ornare nunc. Nunc tincidunt est vitae sem euismod venenatis. Morbi pretium sagittis risus eget faucibus. Aenean semper, orci et sodales dictum, purus mauris gravida lacus, et dictum mauris ante eget mi. Aenean sapien mauris, viverra vel euismod id, suscipit nec dolor.
+         <br />
+         <br />
+         This is the white list element 1
+         <br />
+         This is the white list element 2
+         <br />
+         This is the white list element 3
+         <br />
+         This is the white list element 4
+         <br />
+         <br />
+         This is the green list element 1
+         <br />
+         This is the green list element 2
+         <br />
+         This is the green list element 3
+         <br />
+         This is the green list element 4
+         <br />
+         <br />
+         Cras et dui volutpat nibh consequat tempus. In a augue diam. Donec lacus justo, elementum eget 
+         blandit quis, vulputate sed ipsum. Duis at nisl eget ante cursus feugiat at sed sem. Fusce non 
+         leo vel libero ultricies imperdiet. Vivamus hendrerit lectus at odio semper at consequat quam convallis. 
+         Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris odio 
+         lorem, luctus in fermentum sit amet, tincidunt vitae diam. Donec mauris urna, auctor vitae eleifend et, 
+         auctor vitae tortor. Fusce interdum libero non odio malesuada dignissim ut nec metus. Donec enim lectus, 
+         iaculis sagittis tempus ornare, luctus eget felis. Quisque urna sapien, pulvinar non facilisis vitae, 
+         dictum ac ante. Maecenas in lacus felis. Mauris cursus fringilla enim.
+         </code>
+      </div>
+      <hr />
+      <a href="finalactivity.html" class="button5">Next Lesson</a>
+   </body>
+</html>

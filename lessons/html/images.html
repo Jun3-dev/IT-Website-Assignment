@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Images</title>
+      <link rel="stylesheet" href="../css/img.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div class = "container">
+         <h1>Images</h1>
+         <p class="special">
+            Images can improve the design and the appearance of a web page.
+         </p>
+         <hr />
+         <br />
+         <img src="../../images/girl_photo.jpeg" alt="photographer" width="172" height="276"/>
+         <img src="../../images/coloured_art.jpeg" alt="coloured photo" width="172" height="276"/>
+         <img src="../../images/balloons.jpeg" alt="hot air balloons" width="172" height="276"/>
+         <img src="../../images/waveIT.jpeg" alt="waves" width="170" height="276"/>
+         <br />
+         <hr />
+         <br />
+         <div class = "codebox">
+            <code>
+            &lt;!DOCTYPE&gt; 
+            <br />
+            &lt;html lang="en"&gt;
+            <br />
+            &nbsp;&nbsp;&lt;head&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;Page Title&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/head&gt;
+            <br />
+            &nbsp;&nbsp;&lt;body&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="girl_photo.jpeg" &nbsp;&nbsp;&nbsp;&nbsp;alt="photographer" /&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="coloured_art.jpeg" &nbsp;&nbsp;&nbsp;&nbsp;alt="coloured photo" /&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="balloons.jpeg" alt="hot air &nbsp;&nbsp;&nbsp;&nbsp;balloons" /&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="waves.jpeg" alt="beach" /&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/body&gt;
+            <br/>
+            &lt;/html&gt;
+            <br/>
+            </code> 
+         </div>
+         <br />
+         <hr />
+         <h2>HTML Images Syntax</h2>
+         <p>
+            The HTML &lt;img&gt; tag is used to embed images onto a web page.
+            <br />
+            <br />
+            They are not precisely inserted into a website but rather the images
+            are lnked to web pages. The &lt;img&gt; tag merely creates a holding 
+            place for the image for the referenced image.
+            <br />
+            <br />
+            The &lt;img&gt; tag is empty and contains attributes and is an example
+            of a self closing tag (no ending tag). These two required attributes for
+            an image is the:
+         </p>
+         <ul>
+            <li>src - specifies a path for the image</li>
+            <li>alt - specifies an alternate path for the image</li>
+         </ul>
+         <h3>Syntax</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="url" alt="alternatetext" /&gt;
+            </code>
+         </div>
+         <br />
+         <hr />
+         <h3>The src Attribute</h3>
+         <p>
+            The required src attribute specififies the (URL) to the image.
+            <br />
+            <br />
+            Note that when a web page loads, the browser retrieves the picture from a 
+            web server and places it into the page. As a result, ensure that the picture 
+            remains in the same location on the web page; otherwise, your visitors will 
+            see a broken link indicator. If the browser cannot find the picture, the broken 
+            link symbol and alt text are shown.
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="dandelion.jpeg" alt="flower" /&gt;
+            <br />
+            </code>
+         </div>
+         <br />
+         <hr />
+         <h3>The alt Attribute</h3>
+         <p>
+            If a user is unable to view a picture due to technical difficulties, the alt 
+            property is necessary (because of slow connection, an error in the src attribute, 
+            or if the user uses a screen reader).
+            <br />
+            <br />
+            The alt attribute's value should explain the image:
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="waves.jpeg" alt="beach" /&gt;
+            <br />
+            </code>
+         </div>
+         <br />
+         <p>
+            If the browser cannot find the image then it will display the alt 
+            attribute.
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="wrongname" alt="beach" /&gt;
+            <br />
+            </code>
+         </div>
+         <br />
+         <p>
+            <em>A screen reader is a piece of software that interprets HTML code 
+            and lets the user to "listen" to the information. People who are 
+            visually impaired or learning handicapped might benefit from screen 
+            readers.</em>
+         </p>
+         <br />
+         <hr />
+         <h3>Image Size - Width and Height</h3>
+         <p>
+            You can use the &lt;style&gt; attribute to specify the image width and height.
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="breakfast.jpeg" alt="pancakes" style="width:500px;height:600px;" /&gt;
+            </code>
+         </div>
+         <br />
+         <p>
+            Alternatively, you can also use the width and height attributes:
+         </p>
+         <h3>Example</h3>
+         <div class="codebox">
+            <code>
+            &lt;img src="breakfast.jpeg" 
+            alt="pancakes" width="300" height="400" /&gt;
+            </code>
+         </div>
+         <br />
+         <p>
+            The width and the height attributes specify the width and the height of the image
+            in pixels.
+         </p>
+         <hr />
+         <h3>Images in Another Folder</h3>
+         <p>
+            In your HTML coding project if you have a seperate sub-folder
+            for your images you have to include the sub-folder's name in the 
+            "src" attribute: 
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;img src="images/logo.jpeg" alt="HTML 5" width="300" height="400" /&gt;
+            </code>
+         </div>
+         <br />
+         <hr />
+         <h3>Images as a link</h3>
+         <p>To make an image linked (click on the image and it takes you to a website)
+            you put the image inside the &lt;img&gt; inside the &lt;a&gt; : 
+         </p>
+         <div class="codebox">
+            <code>
+            &lt;a href="facezongoogappflix.com"&gt;
+            <br />
+            &nbsp;&nbsp;&lt;img src="images/smile.jpeg" alt="HTML &nbsp;&nbsp;tutorial"/&gt;
+            <br />
+            &lt;/a&gt;
+            </code>
+         </div>
+         <br />
+         <hr />
+         <h2>Exercise</h2>
+         <iframe src = "https://www.youtube.com/embed/SZh4iCkdAB4" width="700" height="500">
+         </iframe>
+         <hr />
+         <a href="tables.html" class="button5">Next Lesson</a>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>

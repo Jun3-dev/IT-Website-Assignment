@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Classes and ID's</title>
+      <link rel="stylesheet" href="../css/gettingstarted.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>The ID and Class attribute</h1>
+      <hr />
+      <p>
+         The id attribute specifies a unique 
+         id for an HTML element. The value of
+         the id attribute must be unique within the HTML document.
+      </p>
+      <p>
+         The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+         To include an id, you put the id in whatever tag, insert quotes and give the id a name. For example
+         &lt;h1 id="myfirstid"&gt;Hello, World!&lt;/h1&gt;
+      </p>
+      <p>
+         In the following example we have an &lt;h1&gt; element that points to the id name "myHeader". This &lt;h1&gt; element will be styled according to the #myHeader style definition in the head section:
+      </p>
+      <hr />
+      <h2>Example:</h2>
+      <div class = "codebox">
+         <code>
+         &lt;!DOCTYPE html&gt;
+         <br/>
+         &lt;html&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;head&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#myFirstID{
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;/head&gt;
+         <br />
+         &nbsp;&nbsp;&lt;body&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 id="myFirstID"&gt;My Header&lt;/h1&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/body&gt;
+         <br />
+         &lt;/html&gt;
+         </code>
+      </div>
+      <hr />
+      <h2>Difference Between Class and ID</h2>
+      <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+      <p>Instead of using a # before to select the class use a . instead also change the id="" to class=""</p>
+      <h2>Example:</h2>
+      <div class = "codebox">
+         <code>
+         &lt;!DOCTYPE html&gt;
+         <br/>
+         &lt;html&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;head&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;style&gt;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Class{
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: black;
+         <br/>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/style&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;/head&gt;
+         <br/>
+         &nbsp;&nbsp;&lt;body&gt;
+         <br />
+         &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="Class"&gt;My Header&lt;/h1&gt;
+         <br />
+         &nbsp;&nbsp;&lt;/body&gt;
+         <br />
+         &lt;/html&gt;
+         </code>
+      </div>
+      <hr />
+      <iframe src = "https://www.youtube.com/embed/h_KQH3hYHgg" width="700" height="500">
+      </iframe>
+      <a href="div.html" class="button5">Next Lesson</a>
+   </body>
+</html>

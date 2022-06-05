@@ -1,0 +1,143 @@
+   <!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>HTML Tags</title>
+      <link rel="stylesheet" href="../css/tags.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../../index.html" class = "active">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Lessons
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a class = "active" href="whatiswww.html">What is the World Wide Web?</a>
+               <a href="whatishtml.html">What is HTML?</a>
+               <a href="gettingstarted.html">Getting started</a>
+               <a href="tags.html">Basic HTML Tags</a>
+               <a href="headingsandparagraphs.html">Headings and paragraphs</a>
+               <a href="text_formatting.html">Text styling</a>
+               <a href="links.html">HTML Links</a>
+               <a href="organisation.html">Organising Website</a>
+               <a href="images.html">Images</a>
+               <a href = "iframe.html">Iframe</a>
+               <a href="tables.html">Tabels</a>
+               <a href="validation.html">Strict Validation</a>
+               <a href="introtocss.html">Introduction to CSS</a>
+               <a href="classes.html">HTML Classes and IDs</a>
+               <a href="div.html">Divs and Spans</a>
+               <a href="selectors.html">CSS Selectors</a>
+               <a href="finalactivity.html">Final Activity</a>
+            </div>
+         </div>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <h1>Basic HTML Tags</h1>
+      <hr />
+      <br />
+      <table class="tags">
+         <tr>
+            <th>HTML Tag</th>
+            <th>Purpose</th>
+         </tr>
+         <tr>
+            <td>&lt;html lang="en"&gt; &lt;/html&gt;</td>
+            <td>Defines the root of an HTML document and the language</td>
+         </tr>
+         <tr>
+            <td>&lt;title&gt; &lt;/title&gt;</td>
+            <td>Defines the title (not displayed on the page)</td>
+         </tr>
+         <tr>
+            <td>&lt;body&gt; &lt;/body&gt;</td>
+            <td>Define's a document's body</td>
+         </tr>
+         <tr>
+            <td>&lt;h1&gt; to &lt;h6&gt;</td>
+            <td>Defines HTMl Headings, &lt;h1&gt; being the biggest and os on.</td>
+         </tr>
+         <tr>
+            <td>&lt;p&gt; &lt;/p&gt;</td>
+            <td>Starts a paragraph, a big body of text in a web page</td>
+         </tr>
+         <tr>
+            <td>&lt;img src="" alt="" /&gt;</td>
+            <td>Displays an image here</td>
+         </tr>
+         <tr>
+            <td>&lt;i&gt; &lt;/i&gt;</td>
+            <td>Set in italics</td>
+         </tr>
+         <tr>
+            <td>&lt;br /&gt;</td>
+            <td>Forces a page break</td>
+         </tr>
+         <tr>
+            <td>&lt;b&gt; &lt;/b&gt;</td>
+            <td>Set in boldface</td>
+         </tr>
+         <tr>
+            <td>&lt;ul&gt; &lt;/ul&gt;</td>
+            <td>Define's an unorder (bulleted) list</td>
+         </tr>
+         <tr>
+            <td>&lt;ol&gt; &lt;/ol&gt;</td>
+            <td>Define's an ordered (numbered) list</td>
+         </tr>
+         <tr>
+            <td>&lt;li&gt; &lt;/li&gt;</td>
+            <td>Brackets an item in an order and unordered list</td>
+         </tr>
+         <tr>
+            <td>&lt;a href="url"&gt; &lt;/a&gt;</td>
+            <td>Defines a link and it's specified address</td>
+         </tr>
+         <tr>
+            <td>&lt;strong&gt; &lt;/strong&gt;</td>
+            <td>Sets in bold</td>
+         </tr>
+         <tr>
+            <td>&lt;em&gt; &lt;/em&gt;</td>
+            <td>Sets in an emphasised text</td>
+         </tr>
+         <tr>
+            <td>&lt;hr /&gt;</td>
+            <td>Forces a page rule</td>
+         </tr>
+      </table>
+      <br />
+      <img src="../../images/tags.png" alt="tags" width="400" height="700" />
+      <hr />
+      <h2>HTML Declaration</h2>
+      <p>HTML Files must start with a decleration which will be seen in all HTML files, &lt;!DOCTYPE HTML&gt;</p>
+      <p>We then follow it with a &lt;html lang="en"&gt; tag. The HTML tag can only have 2 children, and it can only be, the &lt;body&gt; tag and &lt;head&gt; tag</p>
+      
+      <p>The actual webpage that is visible is shown in the &lt;body&gt; tags.</p>
+      <hr />
+      <h2>Exercise</h2>
+      <p>Open our IDE that we just installed. Then create a new folder, and go to File -> Open Folder and select it
+         On the top left, click the files icon to open up your file explorer, and then create a new file.
+      </p>
+      <p>You can name this whatever you want, but I'm going to name mine <b>index.html</b></p>
+      <img src = "../../images/files.png" alt = "files" width="700" height="300" />
+      <p>Lets type out our decleration tag, &lt;!DOCTYPE HTML&gt;, the &lt;html lang="en"&gt; tag, and our &lt;body&gt; tags</p>
+      <p>Lets now add a &lt;h1&gt; tag, we will get to these soon. We will need an opening &lt;h1&gt; tag and a closing
+         &lt;h1/&gt; tag. In the middle, lets write "Hello, World!"
+      </p>
+      <img src="../../images/helloworld.png" alt="hello, world!" width="700" height="440" />
+      <p>Great! Now lets hit out "Go Live" button and we can see our first webpage!</p>
+      <img src="../../images/golive.png" alt="golive" width="700" height="400" />
+      <img src="../../images/helloworldwebpage.png" alt="hello world webpage" width="700" height="400" />
+      <hr />
+      <a href="headingsandparagraphs.html" class="button5">Next Lesson</a>
+      <script src="index.js"></script>
+   </body>
+</html>
